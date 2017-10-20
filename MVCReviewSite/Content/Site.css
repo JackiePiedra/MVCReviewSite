@@ -31,5 +31,29 @@ textarea {
 }
 
 .jumbotron h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
+
+.jumbotron p{
+    color:white;
+    font-family: 'Happy Monkey', cursive;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-family: 'Pacifico', cursive;
+}
+.navbar-nav > li >a{
+    font-size:18px;
+    font-family: 'Happy Monkey', cursive;
+}
+
+footer p{
+    font-size:18px;
+    font-family: 'Happy Monkey', cursive;
+}
+
