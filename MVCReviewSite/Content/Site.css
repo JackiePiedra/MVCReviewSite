@@ -23,6 +23,13 @@ textarea {
     max-width: 280px;
 }
 
-.jumbotron{
-    background-image: url(../Images/cleveland-sign.jpg)
+.jumbotron {
+    background-image: url(../Images/cleveland-sign.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.jumbotron h1{
+    font-family: 'Open Sans', sans-serif;
 }
