@@ -12,18 +12,19 @@ namespace MVCReviewSite.Models
         [Key]
         public int ID { get; set; }
 
-        [Required, Display(Name="Where'd you go?")]
+        [Required, Display(Name="Location")]
         public string Location { get; set; }
-        [Required, Display(Name ="Give us a short blurb..")]
+        [Required, Display(Name ="Title")]
         public string Title { get; set; }
-        [Required, Display(Name ="What'd you think?")]
+        [Required, Display(Name ="Review")]
         public string CustomerReview { get; set; }
-        [Display(Name ="When'd you go?")]
+        [Display(Name ="Visit Date")]
         public DateTime VisitDate { get; set; }
-        [Required, Display(Name ="Do you recommend?")]
+        [Required, Display(Name ="Recommend?")]
         public bool Recommend { get; set; }
 
-        [ForeignKey("Category")]
+        [ForeignKey("Category")] 
+        [Display(Name ="Type of Joint")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }
