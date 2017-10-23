@@ -72,7 +72,22 @@ img.img-responsive{
     text-align:center;
     }
 
-table{
+h4{
+    font-family: 'Crushed', cursive;
+    font-size:24px;
+}
 
+form-horizontal{
+    text-align:center;
+    
+}
+
+#Recommend {
+    margin-left:0px;
+    line-height:inherit;
+}
+
+label{
+    font-weight:500;
 }
 
