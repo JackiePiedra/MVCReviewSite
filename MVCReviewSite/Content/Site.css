@@ -59,5 +59,16 @@ footer p{
 
 body{
     font-family: 'Happy Monkey', cursive;
-    font-size: 24px;
+    font-size: 16px;
 }
+
+div{
+    margin-bottom:4px;
+    /*text-align:center;*/
+}
+img.img-responsive{
+    height:230px;
+    width:230px;
+    text-align:center;
+    }
+
