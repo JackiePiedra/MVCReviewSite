@@ -48,7 +48,7 @@ namespace MVCReviewSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,CustomerReview,VisitDate,Recommend,CategoryID")] Review review)
+        public ActionResult Create([Bind(Include = "ID,Location,Title,CustomerReview,VisitDate,Recommend,CategoryID")] Review review)
         {
             if (ModelState.IsValid)
             {

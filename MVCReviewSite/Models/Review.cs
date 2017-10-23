@@ -18,7 +18,7 @@ namespace MVCReviewSite.Models
         public string Title { get; set; }
         [Required, Display(Name ="Review")]
         public string CustomerReview { get; set; }
-        [DataType(DataType.Date),Display(Name ="Visit Date")]
+        [Required, DataType(DataType.Date),Display(Name ="Visit Date")]
         public DateTime VisitDate { get; set; }
         [Required, Display(Name ="Recommend?")]
         public bool Recommend { get; set; }
