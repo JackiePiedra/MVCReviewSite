@@ -11,32 +11,33 @@
 </p>
 
 
-<div class="container-fluid">
+<div class="container">
 
     @foreach (var item in Model)
     {
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-           
-                <h4>@Html.DisplayFor(modelItem => item.Category.PlaceCategory)</h4>
-                <h4 id="reviewslocation">@Html.DisplayFor(modelItem => item.Location)</h4>
-                <h1>
-                    @if (item.Recommend == true)
-                    {
-                        <span class="glyphicon glyphicon-check"></span>
-                    }
-                    else
-                    {
-                        <span class="glyphicon glyphicon-remove"></span>
-                    }
-                </h1>
-                <h6 id="readmore">
-                    @Html.ActionLink("Read More..", "Details", new { id = item.ID }) <br /><br />
-                </h6>
-                
-            
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="reviewsindex">
+
+            <h4>@Html.DisplayFor(modelItem => item.Category.PlaceCategory)</h4>
+            <h4 id="reviewslocation">@Html.DisplayFor(modelItem => item.Location)</h4>
+            <h1>
+                @if (item.Recommend == true)
+                {
+                    <span class="glyphicon glyphicon-check"></span>
+                }
+                else
+                {
+                    <span class="glyphicon glyphicon-remove"></span>
+                }
+            </h1>
+            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+            <h6 id="readmore">
+                @Html.ActionLink("Read More..", "Details", new { id = item.ID }) <br /><br />
+            </h6>
+
+
         </div>
     }
-    </div>
+</div>
 
 
 

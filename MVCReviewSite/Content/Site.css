@@ -87,11 +87,12 @@ h6 {
     font-family: 'Crushed', cursive;
     font-size: 16px;
 }
-#readmore{
-       font-weight:700;
+
+#readmore {
+    font-weight: 700;
 }
 
-#reviewslocation{
+#reviewslocation {
     font-family: "Pacifico", cursive;
 }
 
@@ -121,5 +122,9 @@ table-condensed {
 
 .glyphicon.glyphicon-remove {
     color: red;
+    text-align: center;
+}
+
+#reviewsindex {
     text-align: center;
 }
