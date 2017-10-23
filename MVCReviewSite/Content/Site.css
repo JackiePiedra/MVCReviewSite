@@ -30,64 +30,96 @@ textarea {
     min-height: 600px;
 }
 
-.jumbotron h1{
+    .jumbotron h1 {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .jumbotron p {
+        color: white;
+        font-family: 'Crushed', cursive;
+    }
+
+h2 {
     font-family: 'Pacifico', cursive;
 }
 
-.jumbotron p{
-    color:white;
-    font-family: 'Crushed', cursive;
-}
-
-h2{
+.navbar-brand {
+    font-size: 28px;
     font-family: 'Pacifico', cursive;
 }
 
-.navbar-brand{
-    font-size:28px;
-    font-family: 'Pacifico', cursive;
-}
-.navbar-nav > li >a{
-    font-size:24px;
+.navbar-nav > li > a {
+    font-size: 24px;
     font-family: 'Crushed', cursive;
 }
 
-footer p{
-    font-size:18px;
+footer p {
+    font-size: 18px;
     font-family: 'Crushed', cursive;
 }
 
-body{
+body {
     font-family: 'Crushed', cursive;
     font-size: 18px;
 }
 
-div{
-    margin-bottom:4px;
+div {
+    margin-bottom: 4px;
     /*text-align:center;*/
 }
-img.img-responsive{
-    height:230px;
-    width:230px;
-    text-align:center;
-    }
 
-h4{
-    font-family: 'Crushed', cursive;
-    font-size:24px;
+img.img-responsive {
+    height: 230px;
+    width: 230px;
+    text-align: center;
 }
 
-form-horizontal{
-    text-align:center;
-    
+h4 {
+    font-family: 'Crushed', cursive;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "Pacifico", cursive;
+}
+
+h6 {
+    font-family: 'Crushed', cursive;
+    font-size: 16px;
+}
+#readmore{
+       font-weight:700;
+}
+
+#reviewslocation{
+    font-family: "Pacifico", cursive;
+}
+
+dl-horizontal {
+    text-align: center;
 }
 
 #Recommend {
-    margin-left:0px;
-    line-height:inherit;
+    margin-left: 0px;
+    line-height: inherit;
 }
 
-label{
-    font-weight:500;
+label {
+    font-weight: 500;
 }
 
+table-condensed {
+    text-overflow: ellipsis;
+    max-width: 240px;
+}
+
+
+.glyphicon.glyphicon-check {
+    color: green;
+    text-align: center;
+}
+
+.glyphicon.glyphicon-remove {
+    color: red;
+    text-align: center;
+}

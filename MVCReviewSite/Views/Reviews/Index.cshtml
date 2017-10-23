@@ -9,55 +9,36 @@
 <p>
     @Html.ActionLink("Click here to write your own CLE review", "Create")
 </p>
-<table class="table-condensed table-hover table-striped" >
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Location)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CustomerReview)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VisitDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Recommend)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.PlaceCategory)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Location)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CustomerReview)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VisitDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Recommend)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
 
-</table>
+<div class="container-fluid">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           
+                <h4>@Html.DisplayFor(modelItem => item.Category.PlaceCategory)</h4>
+                <h4 id="reviewslocation">@Html.DisplayFor(modelItem => item.Location)</h4>
+                <h1>
+                    @if (item.Recommend == true)
+                    {
+                        <span class="glyphicon glyphicon-check"></span>
+                    }
+                    else
+                    {
+                        <span class="glyphicon glyphicon-remove"></span>
+                    }
+                </h1>
+                <h6 id="readmore">
+                    @Html.ActionLink("Read More..", "Details", new { id = item.ID }) <br /><br />
+                </h6>
+                
+            
+        </div>
+    }
+    </div>
+
+
+
+
+</div>

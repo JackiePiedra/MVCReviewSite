@@ -10,6 +10,7 @@ namespace MVCReviewSite.Models
     {
         [Key, Display(Name ="Category")]
         public int ID { get; set; }
+        [Display(Name ="Category")]
         public string PlaceCategory { get; set; }
     }
 }
