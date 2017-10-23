@@ -8,7 +8,7 @@ namespace MVCReviewSite.Models
 {
     public class Category
     {
-        [Key]
+        [Key, Display(Name ="Category")]
         public int ID { get; set; }
         public string PlaceCategory { get; set; }
     }
